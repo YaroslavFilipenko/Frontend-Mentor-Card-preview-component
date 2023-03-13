@@ -91,6 +91,11 @@ img {
     font-size: 0.875rem;
 }
 
+.about__cart-button:hover {
+    background-color: hsl(156, 42%, 18%);
+    transition: .5s ease;
+}
+
 svg {
     margin-right: 10px;
 }
