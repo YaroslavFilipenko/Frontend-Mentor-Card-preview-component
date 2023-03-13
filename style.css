@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+body {
+    font-family: 'montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(30, 38%, 92%);
+    max-width: 100vw;
+    min-height: 100vh;
+}
+
+.card {
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 600px;
+    height: 450px;
+    background: url(images/image-product-desktop.jpg) no-repeat center left / 300px 450px;
+    border-radius: 10px;
+}
+
+img {
+    width: 300px;
+}
+
+.card__about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: 450px;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.about__product-name {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 0.25rem;;
+    color: hsl(228, 12%, 48%);
+}
+
+.about__product-title {
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    line-height: 2rem;
+    color: hsl(0, 0%, 0%);
+}
+
+.about__product-info {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    color: hsl(228, 12%, 48%);
+}
+
+.about__product-price {
+    display: flex;
+    align-items: center;
+}
+
+.product-price__actual {
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    line-height: 2rem;
+    color: hsl(158, 36%, 37%);
+    margin-right: 20px;
+}
+
+.product-price__previous {
+    font-size: 0.75rem;
+    text-decoration: line-through;
+}
+
+.about__cart-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 240px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-size: 0.875rem;
+}
+
+svg {
+    margin-right: 10px;
+}
+
+@media (max-width: 767.98px) {
+    .card {
+        width: 340px;
+        height: 610px;
+        background: url(images/image-product-mobile.jpg) no-repeat top left / 340px 240px;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .card__about {
+        box-sizing: content-box;
+        height: 320px;
+        padding: 25px;
+    }
+
+    .about__product-title,
+    .product-price__actual {
+        font-size: 1.75rem;
+        line-height: 1.75rem;
+    }
+
+    .about__cart-button {
+        width: 290px;
+    }
+}
